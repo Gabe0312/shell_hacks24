@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D8E2F0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-avatar {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .room-stats {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .stat {
+    background: #EFEFEF;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
