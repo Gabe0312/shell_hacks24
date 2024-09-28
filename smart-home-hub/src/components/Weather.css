@@ -1,0 +1,21 @@
+/* Weather.css */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.weather-container h2 {
+    font-size: 2rem;
+    color: #00796b;
+}
+
+.weather-container p {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-top: 10px;
+}
