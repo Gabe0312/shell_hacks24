@@ -22,5 +22,12 @@ const Dashboard = () => {
     </div>
   );
 };
+document.addEventListener('DOMContentLoad',function() {
+  const header = document.querySelector('.header');
+  const notifications = document.querySelector('.notifications');
+  
+  header.classList.add('slide-left');
+  notifications.classList.add('slide-left');
 
+});
 export default Dashboard;

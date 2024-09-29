@@ -1,0 +1,146 @@
+/* Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.clock, .weather, .devices, .rooms, .notifications {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.clock h2, .weather h2, .devices h2, .rooms h2, .notifications h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.clock p, .weather p, .devices p, .rooms p, .notifications p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.device-container, .room-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device-container button, .room-container button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.device-container button:hover, .room-container button:hover {
+    background-color: #303f9f;
+}
+
+/* iPhone-like Notifications */
+.notifications {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 8px 8px;
+    text-align: center;
+    font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    transition: transform 0.3s ease-in-out;
+    
+
+}
+
+.notifications h2 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.notifications p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #3f51b5;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+}
+
+.notification-text {
+    flex: 1;
+
+}
+
+.notification-time {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Slide header to the left */
+.header.slide-left {
+    transform: translateX(-100px);
+}
+
+/* Slide notifications to the left */
+.notifications.slide-left {
+    transform: translateX(-100px);
+}
+

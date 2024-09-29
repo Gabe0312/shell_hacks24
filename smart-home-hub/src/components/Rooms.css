@@ -1,0 +1,49 @@
+.rooms {
+    background-color: linear-gradient(135deg, #e0f7f1, #80deea);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+  }
+  
+  .room-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .room-item:last-child {
+    border-bottom: none;
+  }
+  
+  .room-icon {
+    margin-right: 10px;
+  }
+  
+  .room-name {
+    font-size: 4vw;
+    color: #333;
+  }
+  
+  .room-devices {
+    font-size: 3vw;
+    color: #666;
+  }
+  
+  .arrow-indicator {
+    margin-left: auto;
+    color: #999;
+  }
+  @media(min-width: 600px){
+    .room-name{
+        font-size: 18px;
+    }
+
+    .room-devices{
+        font-size: 14px;
+    }
+  }
+  
